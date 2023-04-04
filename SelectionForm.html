@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hooop's Cafe</title>
+
+        <style>
+            fieldset
+            {
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hooop Cafe Lunch Special</h1>
+        <p>Monday through Friday</p>
+        <p>11 am - 3 pm</p>
+        <p>$9.95 plus</p>
+        <p> Includes sandwich, snack, and drink.</p>
+
+        <form>
+            <!-- Order Information -->
+            <fieldset>
+                <legend>Order Information</legend>
+                <!-- Name Information -->
+                <div>
+                    <label for = "name"><strong>Name</strong></label>
+                    <br>
+                    <input id = "name" type="text" required>
+                    <br><br>
+                </div>    
+                
+
+                <!-- Location Information -->
+                <div>
+                    <input type = "radio" name = "location" value = "Here" id = "Here">
+                    <label for="Here">Here</label>
+                    <br>
+                    <input type = "radio" name = "location" value = "To Go" id = "To Go">
+                    <label for="To Go">To Go</label>
+                </div>
+            </fieldset>
+
+            <!--Sandwiches Information-->
+            <fieldset>
+                <legend>Sandwiches</legend>
+                <!-- Monday Option-->
+                <div>
+                    <label for = "mondayFoodChoice"><strong>Monday</strong></label>
+                    <br>
+                    <input type = "radio" name = "mondayFoodChoice" value = "TomatoMozzarella" id = "TomatoMozzarella">
+                    <label for = "TomatoMozzarella">Tomato Mozzarella</label>
+                    <br>
+                    <input type = "radio" name = "mondayFoodChoice" value = "ChickenSalad" id = "ChickenSalad">
+                    <label for = "ChickenSalad">Chicken Salad</label>
+                </div>
+
+                <!-- Tuesday Option-->
+                <div>
+                    <label for = "tuesdayFoodChoice"><strong>Tuesday</strong></label>
+                    <br>
+                    <input type = "radio" name = "tuesdayFoodChoice" value = "GreekSaladWrap" id = "GreekSaladWrap">
+                    <label for = "GreekSaladWrap">Greek Salad Wrap</label>
+                    <br>
+                    <input type = "radio" name = "tuesdayFoodChoice" value = "TotoWrap" id = "TotoWrap">
+                    <label for = "TotoWrap">Toto Wrap</label>
+                </div>
+
+                <!-- Wednesday Option-->
+                <div>
+                    <label for = "wednesdayFoodChoice"><strong>Wednesday</strong></label>
+                    <br>
+                    <input type = "radio" name = "wednesdayFoodChoice" value = "RedPepperHummus" id = "RedPepperHummus">
+                    <label for = "RedPepperHummus">Red Pepper Hummus</label>
+                    <br>
+                    <input type = "radio" name = "wednesdayFoodChoice" value = "RoastedTurkey" id = "RoastedTurkey">
+                    <label for = "RoastedTurkey">Roasted Turkey</label>
+                </div>
+
+                <!--Thursday Option-->
+                <div>
+                    <label for = "thursdayFoodChoice"><strong>Thursday</strong></label>
+                    <br>
+                    <input type = "radio" name = "thursdayFoodChoice" value = "CarrotGingerHummusWrap" id = "CarrotGingerHummusWrap">
+                    <label for = "CarrotGingerHummusWrap">Carrot-Ginger-Hummus-Wrap</label>
+                    <br>
+                    <input type = "radio" name = "thursdayFoodChoice" value = "EggSalad" id = "EggSalad">
+                    <label for = "EggSalad">Egg Salad</label>
+                </div>
+
+                <!--Friday Option-->
+                <div>
+                    <label for = "fridayFoodChoice"><strong>Friday</strong></label>
+                    <br>
+                    <input type = "radio" name = "fridayFoodChoice" value = "DadoWrap" id = "DadoWrap">
+                    <label for = "DadoWrap">Dado Wrap</label>
+                    <br>
+                    <input type = "radio" name = "fridayFoodChoice" value = "TunaSalad" id = "TunaSalad">
+                    <label for = "TunaSalad">Tuna Salad</label>
+                </div>
+
+                <!--Gluten Free Bread Option-->
+                <hr>
+                <div>
+                    <label for = "addOnBread"></label>
+                    <input type = "checkbox" name = "addOnBread" value = "GlutenFreeBread" id = "GlutenFreeBread">
+                    <label for = "GlutenFreeBread">Gluten Free Bread (75¢ extra)</label>
+                </div>
+            </fieldset>
+
+            <!-- Snack Option -->
+            <fieldset>
+                <legend>Snack</legend>
+                <div>
+                    <label for = "snackChoice"><strong>Snacks</strong></label>
+                    <br>
+                    <input type = "radio" name = "snackChoice" value = "Apple" id = "Apple">
+                    <label for = "Apple">Apple</label>
+                    <br>
+                    <input type = "radio" name = "snackChoice" value = "Banana" id = "Banana">
+                    <label for = "Banana">Banana</label>
+                    <br>
+                    <input type = "radio" name = "snackChoice" value = "PotatoChips" id = "PotatoChips">
+                    <label for = "PotatoChips">Potato Chips</label>
+                </div>
+            </fieldset>
+
+            
+            <!--Drink Option-->
+            <fieldset>
+                <legend>Drink</legend>
+                <!--Drop Down Menu-->
+                <div>
+                    <label for = "drinkChoice"><strong>Drinks</strong></label>
+                    <select id = "drinkChoice" name = "drinkChoice">
+                        <option value = "0">Hot Black Tea - Keemun</option>
+                        <option value = "1">Fanta</option>
+                        <option value = "2">Coke</option>
+                        <option value = "3">Homemade Iced Tea</option>
+                    </select>
+                    <hr>
+                    <label for = "addOnDrinkSize"></label>
+                    <input type = "checkbox" name = "addOnDrinkSize" value = "Large" id = "Large">
+                    <label for="Large">Large Drink (75¢ extra)</label>
+
+                </div>
+            </fieldset>
+            <br>
+            
+            <!-- Form Control Buttons -->
+            <div>
+
+                <button type = "submit">Place Order</button>
+            </div>
+        </form>
+    </body>
+</html>
+
